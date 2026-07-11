@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f0e8;
+    color: #1f1f1f;
+}
+
+.app-header {
+    background: #1d3557;
+    color: white;
+    padding: 48px 24px;
+}
+
+.app-header__content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.app-header p {
+    margin: 12px 0 0;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.app-layout {
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 24px;
+    display: grid;
+    gap: 24px;
+}
+
+.route-panel,
+.content-panel {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.route-panel {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: 700;
+}
+
+select,
+button {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 8px;
+    border: none;
+    background: #1d3557;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #284b7a;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+.section-heading p {
+    margin-top: 6px;
+    color: #666;
+}
+
+.places-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.place-card {
+    border: 1px solid #e3e3e3;
+    border-radius: 14px;
+    padding: 18px;
+    background: #fafafa;
+}
+
+.place-card h3 {
+    margin: 0 0 8px;
+}
+
+.place-card__category {
+    color: #777;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.route-list {
+    margin-top: 20px;
+}
+
+.route-list li {
+    margin-bottom: 10px;
+}
