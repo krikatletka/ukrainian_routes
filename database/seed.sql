@@ -1,16 +1,25 @@
+/**
+ * seed.sql
+ * Database for Ukrainian routes application
+ */
+ 
+-- This file is used to seed the database with initial data
 USE ukrainian_routes;
 
+-- Insert initial data into cities and categories tables
 INSERT INTO cities (name, slug) VALUES
 ('Kyiv', 'kyiv'),
 ('Lviv', 'lviv'),
 ('Odesa', 'odesa');
 
+-- Insert initial data into categories table
 INSERT INTO categories (name, slug) VALUES
 ('Architecture', 'architecture'),
 ('Museum', 'museum'),
 ('Monument', 'monument'),
 ('Castle', 'castle');
 
+-- Insert initial data into places table    
 INSERT INTO places (
     city_id,
     category_id,
@@ -77,3 +86,4 @@ INSERT INTO places (
     40,
     'lviv-opera.jpg'
 );
+-- todo: add more places for Odesa and other cities

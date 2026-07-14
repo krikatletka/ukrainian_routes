@@ -1,3 +1,10 @@
+/*
+ * Database configuration file for the Ukrainian Heritage Routes project.
+ * This file contains the necessary settings to establish a connection to the MySQL database.
+ *
+ * @package UkrainianHeritageRoutes
+ * @version 1.0.0
+ */
 CREATE DATABASE IF NOT EXISTS ukrainian_routes
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
