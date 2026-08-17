@@ -28,7 +28,7 @@ $username = 'root';
  */
 $password = '';
 
-//$db = new mysqli('localhost', $username, $password, $databasename);
+//$db = new mysqli('localhost1', $username, $password, $databasename);
 //$db->set_charset("utf8mb4");
 
 /**
@@ -53,3 +53,5 @@ catch (PDOException $exception)
     die("Connection failed: " . $exception->getMessage());
 }
 
+$query = "INSERT INTO categories (name, slug) VALUES ('Museum', 'museum')";
+$connection->exec($query);
